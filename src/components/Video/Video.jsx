@@ -1,8 +1,14 @@
 import React from 'react'
+import video from "../../assets/video.mp4"
 
 function Video() {
     return (
-        <div>Video</div>
+        <div className='w-full'>
+            <video  controls autoPlay>
+            <source src={video} type="video/mp4" />
+        
+             </video>
+        </div>
     )
 }
 
