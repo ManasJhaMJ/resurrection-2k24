@@ -1,4 +1,4 @@
-import  {useState} from 'react'
+import { useState } from 'react'
 import Resurrection from '../../assets/Resurrection.png'
 import resurrection_text from '../../assets/resurrection-text.png'
 
@@ -13,8 +13,8 @@ function Navbar() {
                 {/* Logo and text */}
                 <div className="flex items-center">
                     <a href="#home" className="flex justify-between items-center">
-                        <img src={Resurrection} alt="Logo" className="h-20 w-20" />
-                        <img src={resurrection_text} alt="Logo" className="h-12 w-15" />
+                        <img src={Resurrection} alt="Logo" className=" h-16 w-16" />
+                        <img src={resurrection_text} alt="Logo" className="h-12 w-15 nav-logo-text" />
                     </a>
                 </div>
             </div>
@@ -23,7 +23,7 @@ function Navbar() {
             <div className="lg:hidden">
                 <button onClick={toggleMenu} className="text-white focus:outline-none">
                     <svg
-                        className="w-6 h-6"
+                        className="w-6 h-6 z-10"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -60,9 +60,8 @@ function Navbar() {
 
             {/* Mobile Menu */}
             <div
-                className={`lg:hidden fixed top-0 left-0 w-full bg-black text-white transition-transform transform ${
-                    isOpen ? 'translate-x-0' : '-translate-x-full'
-                }`}
+                className={`lg:hidden fixed top-[6rem] left-0 w-full bg-[#0c0c0c] text-white transition-transform transform ${isOpen ? 'translate-x-0' : '-translate-x-full'
+                    }`}
             >
                 <div className="p-6">
                     <a href="#home" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>Home</a>

@@ -9,7 +9,7 @@ import event6 from '../../assets/Events/6.png'
 function Events() {
     return (
         <section id='events'>
-            <h1>Our Events</h1>
+            <h1>More About Us</h1>
             <div className='event-container'>
                 <img src={event1} alt="events" />
                 <img src={event2} alt="events" />
@@ -19,7 +19,7 @@ function Events() {
                 <img src={event6} alt="events" />
             </div>
             <button>
-                Explore Events
+                Register Now
             </button>
         </section>
     )
