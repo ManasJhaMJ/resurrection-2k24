@@ -3,7 +3,7 @@ import video from "../../assets/video.mp4"
 
 function Video() {
     return (
-        <div className='w-full'>
+        <div className='w-full overflow-hidden'>
             <video  controls autoPlay>
             <source src={video} type="video/mp4" />
         
