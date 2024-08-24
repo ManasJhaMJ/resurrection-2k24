@@ -18,7 +18,7 @@ import gallery09 from '../../assets/gallery/gallery09.png'
 function Gallery() {
     return (
         <section id='gallery'>
-            <div className='gallery-text'>Image Gallery</div>
+            <div className='gallery-text'><h1>Image Gallery</h1></div>
             <div className='gallery'>
                 <Swiper slidesPerView={1}
                     spaceBetween={30}
