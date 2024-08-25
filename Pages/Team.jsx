@@ -1,7 +1,14 @@
 import TeamCard from '../src/components/Team/TeamCard'
+import Navbar from "../src/components/Navbar/Navbar"
+import ContactUs from '../src/components/ContactUs/ContactUs'
+import Footer from '../src/components/Footer/Footer'
 
 function Team() {
     return (
+       <> <Navbar />
+            <section id ='events'>
+                <h1>Meet the Core Team</h1>
+            </section>
         <section id='team'>
             <div className='team'>
                 <TeamCard
@@ -26,6 +33,9 @@ function Team() {
                 />
             </div>
         </section>
+        <ContactUs />
+        <Footer />
+        </>
     )
 }
 
