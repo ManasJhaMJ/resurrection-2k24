@@ -52,7 +52,7 @@ function Navbar() {
                 <Link to="/" className="hover:text-yellow-500">Home</Link>
                 <a href="#about" className="hover:text-yellow-500">About</a>
                 <Link to="/Events" className="hover:text-yellow-500">Events</Link>
-                <a href="#sponsors" className="hover:text-yellow-500">Sponsors</a>
+                <Link to="/sponsors" className="hover:text-yellow-500">Sponsors</Link>
                 <div>|</div>
                 <Link to="/Team" className="hover:text-yellow-500">Our Team</Link>
             </div>
@@ -65,9 +65,9 @@ function Navbar() {
                 <div className="p-6">
                     <a href="#home" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>Home</a>
                     <a href="#about" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>About</a>
-                    <a href="#events" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>Events</a>
-                    <a href="#sponsors" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>Sponsors</a>
-                    <a href="#team" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>Our Team</a>
+                    <Link to="/Events" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>Events</Link>
+                    <Link to="/sponsors" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>Sponsors</Link>
+                    <Link to="/Team" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>Our Team</Link>
                 </div>
             </div>
         </nav>
