@@ -1,21 +1,20 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react'
 import Resurrection from '../../assets/Resurrection.png'
 import resurrection_text from '../../assets/resurrection-text.png'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-
     const toggleMenu = () => setIsOpen(!isOpen);
-
     return (
         <nav className="flex items-center justify-between p-6">
             <div className="flex items-center">
                 {/* Logo and text */}
                 <div className="flex items-center">
-                    <a href="#home" className="flex justify-between items-center">
+                    <Link to="/" className="flex justify-between items-center">
                         <img src={Resurrection} alt="Logo" className=" h-16 w-16" />
                         <img src={resurrection_text} alt="Logo" className="h-12 w-15 nav-logo-text" />
-                    </a>
+                    </Link>
                 </div>
             </div>
 
@@ -50,12 +49,12 @@ function Navbar() {
 
             {/* Desktop Links */}
             <div className="hidden lg:flex space-x-8 text-white">
-                <a href="#home" className="hover:text-yellow-500">Home</a>
+                <Link to="/" className="hover:text-yellow-500">Home</Link>
                 <a href="#about" className="hover:text-yellow-500">About</a>
-                <a href="#events" className="hover:text-yellow-500">Events</a>
+                <Link to="/Events" className="hover:text-yellow-500">Events</Link>
                 <a href="#sponsors" className="hover:text-yellow-500">Sponsors</a>
                 <div>|</div>
-                <a href="#team" className="hover:text-yellow-500">Our Team</a>
+                <Link to="/Team" className="hover:text-yellow-500">Our Team</Link>
             </div>
 
             {/* Mobile Menu */}

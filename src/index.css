@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -358,4 +359,259 @@ h2 {
     width: 100%;
   }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#events {
+  padding: 2rem;
+  text-align: center;
+  background-color: #0c0c0c;
+  color: #fff;
+}
+
+#events h1 {
+  font-family: 'Cormorant Upright', serif;
+  font-size: 4rem;
+  color: #dcca87;
+  margin-bottom: 1rem;
+}
+
+.about-events-text {
+  font-family: 'Cormorant Upright', serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.event-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 5%; /* Center the cards horizontally */
+}
+
+.event-card {
+  width: 70%; /* Reduce the width of the card */
+  background-color: rgba(245, 239, 219, 0.85); /* Make the card slightly transparent */
+  color: #000;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.7); /* Neon yellow glow effect */
+  text-align: left;
+  position: relative; /* Add relative positioning to the card */
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out; /* Smooth fade-in transition */
+  opacity: 0; /* Start with hidden opacity */
+  transform: translateY(20px); /* Start slightly translated */
+}
+
+.event-card.fade-in {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to normal position */
+}
+
+.event-card:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 0, 1); /* Intensify the glow on hover */
+  transform: scale(1.02); /* Slightly enlarge the card on hover */
+}
+
+/* .event-image {
+  width: 80%; 
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto; 
+} */
+
+.event-image {
+  width: 80%; /* Set the image width to 80% of the card width */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure the image is treated as a block-level element */
+}
+
+
+.event-content {
+  padding: 1.5rem 0;
+  text-align: center; /* Center the content */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.event-card h2 {
+  font-family: 'Cormorant Upright', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #000;
+}
+
+.event-card p {
+  font-family: 'Cormorant Upright', serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  max-height: 3rem; /* Initial collapsed height */
+  overflow: hidden;
+  opacity: 1; /* Ensure the text is visible initially */
+  transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth transition for both expanding and collapsing */
+}
+
+.event-card.expanded p {
+  max-height: 500px; /* Expanded height */
+  opacity: 1; /* Ensure the text remains fully visible */
+}
+
+.event-card.collapsing p {
+  max-height: 3rem; /* Collapsed height */
+  opacity: 0; /* Fade out */
+}
+
+.read-more {
+  background-color: transparent;
+  color: #0c0c0c; /* Ensure the "Read More" text is visible */
+  border: none;
+  font-family: 'Cormorant Upright', serif;
+  font-size: 1.2rem !important;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1rem;
+  display: inline-block; /* Center the text */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition */
+}
+
+.register {
+  background-color: #0c0c0c !important; /* Black background */
+  color: #dcca87 !important; /* Yellow text */
+  padding: 1rem 2rem !important;
+  border: 2px solid transparent !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  font-family: 'Cormorant Upright', serif !important;
+  font-size: 1.2rem !important;
+  margin-top: 1rem !important;
+  display: inline-block !important;
+  text-transform: uppercase !important;
+  position: relative !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important; /* Add smooth transition */
+  margin-left: auto !important;
+  margin-right: auto !important; /* Center the button */
+  overflow: hidden; /* Ensure the pseudo-element stays within the button */
+}
+
+/* Neon border animation */
+.register::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #dcca87; /* Neon yellow border */
+  border-radius: 5px;
+  box-shadow: 0 0 10px #dcca87, 0 0 20px #dcca87, 0 0 30px #dcca87;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Prevent interaction */
+  animation: neon-border 2s linear infinite; /* Continuous animation */
+}
+
+/* Hover effect to make the neon border visible */
+.register:hover::before {
+  opacity: 1;
+}
+
+/* Keyframes for the border animation */
+@keyframes neon-border {
+  0% {
+    clip-path: inset(0% 100% 0% 0%);
+  }
+  25% {
+    clip-path: inset(0% 0% 100% 0%);
+  }
+  50% {
+    clip-path: inset(0% 0% 0% 100%);
+  }
+  75% {
+    clip-path: inset(100% 0% 0% 0%);
+  }
+  100% {
+    clip-path: inset(0% 100% 0% 0%);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .event-card {
+    padding: 1.5rem;
+    width: 90%; /* Make the card wider on smaller screens */
+  }
+
+  .event-content {
+    padding: 1rem 0;
+  }
+}
+
+.custom-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* .custom-dots .dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #dcca87; 
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-dots .dot.active {
+  background-color: #000; 
+} */
+
+.custom-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.custom-dots .dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #dcca87; /* Inactive dot color */
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.custom-dots .dot.active {
+  background-color: #000; /* Active dot color */
+}
+
+
+.custom-dots .dot:hover {
+  background-color: #dcca87; /* Hover effect */
 }
