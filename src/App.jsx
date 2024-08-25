@@ -4,6 +4,7 @@ import Home from '../Pages/Home';
 import Team from '../Pages/Team';
 import Events from '../Pages/Events';
 import ScrollToTop from '../src/ScrollToTop'; // Import the ScrollToTop component
+import Sponsor from './components/Sponsors/Sponsor';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/team" element={<Team />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/sponsors" element={<Sponsor />} />
       </Routes>
     </Router>
   );
