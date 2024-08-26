@@ -37,39 +37,39 @@ function Sponsor() {
             <h2 className='text-center mt-6 text-4xl font-bold'> PREVIOUS</h2>
 
             <div className='mx-auto flex flex-wrap'>
-                <img src={allahabadBank} className='w-1/3 rounded'/>
-                <img src={BNatural} className='w-1/3 '/>
-                <img src={Canvas} className='w-1/3'/>
-                <div className='w-1/3 flex justify-center items-center'>
-                <img src={CodingNinja} className='object-cover '/>
+                <img src={allahabadBank} className='w-1/3 lg:w-1/4'/>
+                <img src={BNatural} className='w-1/3 lg:w-1/4'/>
+                <img src={Canvas} className='w-1/3 lg:w-1/4'/>
+                <div className='w-1/3 lg:w-1/4 flex justify-center items-center'>
+                <img src={CodingNinja} className='object-cover lg:mr-10'/>
                 </div>
-                <img src={CokeStudio} className='w-1/3'/>
-                <img src={comio} className='w-1/3'/>
-                <img src={cornitos} className='w-1/3'/>
-                <img src={dominos} className='w-1/3'/>
-                <div className='w-1/3 overflow-hidden flex justify-center items-center'>
+                <img src={CokeStudio} className='w-1/3 lg:w-1/4'/>
+                <img src={comio} className='w-1/3 lg:w-1/4'/>
+                <img src={cornitos} className='w-1/3 lg:w-1/4'/>
+                <img src={dominos} className='w-1/3 lg:w-1/4'/>
+                <div className='w-1/3 lg:w-1/4 overflow-hidden flex justify-center items-center'>
                 <img src={indianOil} className='w-40 h-35'/>
                 </div>
-                <img src={instamojo} className='w-1/3'/>
-                <img src={kuppies} className='w-1/3'/>
-                <img src={lakme} className='w-1/3'/>
-                <img src={mard} className='w-1/3'/>
-                <img src={mjPrints} className='w-1/3'/>
-                <img src={paytm} className='w-1/3'/>
-                <img src={poetsCollective} className='w-1/3'/>
-                <img src={rabbitMerch} className='w-1/3'/>
-                <img src={radioMR} className='w-1/3'/>
-                <img src={sarvodaya} className='w-1/3'/>
-                <div className='w-1/3 overflow-hidden flex justify-center items-center'>
-                <img src={spyker} className='w-45 h-40'/>
+                <img src={instamojo} className='w-1/3 lg:w-1/4'/>
+                <img src={kuppies} className='w-1/3 lg:w-1/4'/>
+                <img src={lakme} className='w-1/3 lg:w-1/4'/>
+                <img src={mard} className='w-1/3 lg:w-1/4'/>
+                <img src={mjPrints} className='w-1/3 lg:w-1/4'/>
+                <img src={paytm} className='w-1/3 lg:w-1/4'/>
+                <img src={poetsCollective} className='w-1/3 lg:w-1/4'/>
+                <img src={rabbitMerch} className='w-1/3 lg:w-1/4'/>
+                <img src={radioMR} className='w-1/3 lg:w-1/4'/>
+                <img src={sarvodaya} className='w-1/3 lg:w-1/4'/>
+                <div className='w-1/3 lg:w-1/4 overflow-hidden flex justify-center items-center'>
+                <img src={spyker} className='w-45 h-40 lg:mr-10'/>
                 </div>
-                <img src={swatimod} className='w-1/3'/>
-                <img src={tata} className='w-1/3'/>
-                <img src={toyota} className='w-1/3'/>
-                <img src={ttak} className='w-1/3'/>
-                <img src={UM} className='w-1/3'/>
-                <img src={volkswagen} className='w-1/3'/>
-                <div className='w-1/3 overflow-hidden flex justify-center items-center'>
+                <img src={swatimod} className='w-1/3 lg:w-1/4'/>
+                <img src={tata} className='w-1/3 lg:w-1/4'/>
+                <img src={toyota} className='w-1/3 lg:w-1/4'/>
+                <img src={ttak} className='w-1/3 lg:w-1/4'/>
+                <img src={UM} className='w-1/3 lg:w-1/4'/>
+                <img src={volkswagen} className='w-1/3 lg:w-1/4'/>
+                <div className='w-1/3 lg:w-1/4 overflow-hidden flex justify-center items-center'>
                 <img src={Yipee} className='w-50 h-40'/>
                 </div>
 
