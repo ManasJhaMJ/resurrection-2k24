@@ -15,7 +15,7 @@ function About() {
             </div>
 
             <div className='flex justify-center items-center h-[500px] w-1/2'>
-                <img src={Resurrection} className='w-full'></img>
+                <img src={Resurrection} className='sm:h-full h-auto'></img>
             </div>
 
         </section>
