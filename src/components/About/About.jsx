@@ -1,10 +1,9 @@
-import React from 'react'
 import Resurrection from '../../assets/Resurrection.png'
 
 function About() {
     return (
 
-        <section id='about' className='flex items-center justify-around'>
+        <section id='about' className='flex items-center justify-around my-14'>
 
             <div className='w-1/2'>
                 <h1 className='text-center font-bold text-8xl text-[#dcca87]'>About</h1>
@@ -15,8 +14,8 @@ function About() {
 
             </div>
 
-            <div className='flex justify-center items-center w-1/2'>
-                <img src={Resurrection} className='h-full w-1/2'></img>
+            <div className='flex justify-center items-center h-[500px] w-1/2'>
+                <img src={Resurrection} className='w-full'></img>
             </div>
 
         </section>

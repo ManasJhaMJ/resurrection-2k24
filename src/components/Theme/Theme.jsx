@@ -1,16 +1,15 @@
-import React from 'react'
 import ThemeImg from "../../assets/theme.png"
 
 function Theme() {
     return (
-        <section id='theme' className='flex'>
+        <section id='theme' className='flex items-center'>
 
             <div className='w-1/2 flex justify-center items-center'>
                 <img src={ThemeImg}></img>
             </div>
 
             <div className='w-1/2'>
-                <h1 className='text-center font-bold text-7xl my-6 text-[#dcca87]'>THEME</h1>
+                <h1 className='text-center font-bold text-7xl m-0 text-[#dcca87]'>THEME</h1>
 
                 <p className='my-6 mr-7 text-lg text-center'>
                     Let&apos;s embark on the most dramatic voyage in Bollywood films.<br></br>
