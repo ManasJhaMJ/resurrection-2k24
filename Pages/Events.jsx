@@ -1,15 +1,12 @@
-import React from 'react';
 import Navbar from '../src/components/Navbar/Navbar'; // Adjust the import path if needed
 import Events from '../src/components/Events/Events'; // Adjust the import path if needed
-import ContactUs from '../src/components/ContactUs/ContactUs'; // Adjust the import path if needed
 import Footer from '../src/components/Footer/Footer'; // Adjust the import path if needed
 
-function MainPage () {
+function MainPage() {
   return (
     <div>
       <Navbar />
       <Events />
-      <ContactUs />
       <Footer />
     </div>
   );
