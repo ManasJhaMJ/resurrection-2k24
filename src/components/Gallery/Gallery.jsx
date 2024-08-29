@@ -5,15 +5,15 @@ import 'swiper/css/navigation';
 
 import { Pagination, Navigation } from 'swiper/modules';
 
-import gallery01 from '../../assets/gallery/gallery01.png'
-import gallery02 from '../../assets/gallery/gallery02.png'
-import gallery03 from '../../assets/gallery/gallery03.png'
-import gallery04 from '../../assets/gallery/gallery04.png'
-import gallery05 from '../../assets/gallery/gallery05.png'
-import gallery06 from '../../assets/gallery/gallery06.png'
-import gallery07 from '../../assets/gallery/gallery07.png'
-import gallery08 from '../../assets/gallery/gallery08.png'
-import gallery09 from '../../assets/gallery/gallery09.png'
+import gallery01 from '../../assets/gallery/gallery01.webp'
+import gallery02 from '../../assets/gallery/gallery02.webp'
+import gallery03 from '../../assets/gallery/gallery03.webp'
+import gallery04 from '../../assets/gallery/gallery04.webp'
+import gallery05 from '../../assets/gallery/gallery05.webp'
+import gallery06 from '../../assets/gallery/gallery06.webp'
+import gallery07 from '../../assets/gallery/gallery07.webp'
+import gallery08 from '../../assets/gallery/gallery08.webp'
+import gallery09 from '../../assets/gallery/gallery09.webp'
 
 function Gallery() {
     return (

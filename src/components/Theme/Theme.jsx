@@ -1,4 +1,4 @@
-import ThemeImg from "../../assets/theme.png"
+import ThemeImg from "../../assets/theme.webp"
 
 function Theme() {
     return (

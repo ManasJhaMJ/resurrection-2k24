@@ -1,5 +1,5 @@
-import logo from '../../assets/Resurrection.png'
-import logo_text from '../../assets/resurrection-text.png'
+import logo from '../../assets/Resurrection.webp'
+import logo_text from '../../assets/resurrection-text.webp'
 
 import { FaTwitter, FaInstagram } from 'react-icons/fa';
 import { LuFacebook, LuTwitter, LuInstagram } from "react-icons/lu";

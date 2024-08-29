@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react'
-import Resurrection from '../../assets/Resurrection.png'
-import resurrection_text from '../../assets/resurrection-text.png'
+import Resurrection from '../../assets/Resurrection.webp'
+import resurrection_text from '../../assets/resurrection-text.webp'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);

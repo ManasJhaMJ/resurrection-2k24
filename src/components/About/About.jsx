@@ -1,4 +1,4 @@
-import Resurrection from '../../assets/Resurrection.png'
+import Resurrection from '../../assets/Resurrection.webp'
 
 function About() {
     return (

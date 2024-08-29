@@ -56,13 +56,12 @@ const Events = () => {
 
   const toggleExpand = (index) => {
     if (expanded[index]) {
-      // "Read Less" logic: Smoothly collapse the text
       setCollapsing((prevState) => ({
         ...prevState,
         [index]: true,
       }));
   
-      // Scroll up smoothly before collapsing the text
+
       setTimeout(() => {
         const element = eventRefs.current[index];
         if (element) {
@@ -71,7 +70,7 @@ const Events = () => {
             block: 'start',
           });
         }
-      }, 0); // No delay before scrolling up
+      }, 0); 
   
       setTimeout(() => {
         setExpanded((prevState) => ({
@@ -82,9 +81,9 @@ const Events = () => {
           ...prevState,
           [index]: false,
         }));
-      }, 1000); // Delay to allow the collapse transition
+      }, 1000); 
     } else {
-      // "Read More" logic: Fade out, then expand, then fade in
+
       setCollapsing((prevState) => ({
         ...prevState,
         [index]: true,
@@ -99,9 +98,8 @@ const Events = () => {
           ...prevState,
           [index]: false,
         }));
-      }, 500); // Delay to allow fade-out effect
-  
-      // Scroll down smoothly after expanding the text
+      }, 500); 
+
       setTimeout(() => {
         const element = eventRefs.current[index];
         if (element) {
@@ -110,7 +108,7 @@ const Events = () => {
             block: 'end',
           });
         }
-      }, 600); // Small delay before scrolling down
+      }, 600); 
     }
   };
   const events = [
@@ -180,7 +178,6 @@ const Events = () => {
       ],
       registerLink: 'https://forms.gle/your-form-link',
     },
-    // Add more events as needed...
   ];
 
   const sliderSettings = (index) => ({
@@ -190,9 +187,9 @@ const Events = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false, // Disable next/previous arrows
-    beforeChange: (oldIndex, newIndex) => handleSlideChange(index, newIndex), // Update current slide on change
-    afterChange: (newIndex) => handleSlideChange(index, newIndex), // Ensure current slide is updated after initial load
+    arrows: false, 
+    beforeChange: (oldIndex, newIndex) => handleSlideChange(index, newIndex),
+    afterChange: (newIndex) => handleSlideChange(index, newIndex),
   });
 
   const handleSlideChange = (eventIndex, slideIndex) => {
@@ -229,10 +226,10 @@ const Events = () => {
         {events.map((event, index) => (
           <div
             key={index}
-            ref={(el) => (eventRefs.current[index] = el)} // Assign each card a ref
+            ref={(el) => (eventRefs.current[index] = el)}
             className={`event-card ${expanded[index] ? 'expanded' : ''} ${collapsing[index] ? 'collapsing' : ''} ${
               visible.has(eventRefs.current[index]) ? 'fade-in' : ''
-            }`} // Add fade-in class if the card is visible
+            }`} 
           >
             <h2>{event.title}</h2>
             <Slider {...sliderSettings(index)}>
@@ -242,7 +239,7 @@ const Events = () => {
                 </div>
               ))}
             </Slider>
-            {renderCustomDots(index, event.images.length)} {/* Render custom dots */}
+            {renderCustomDots(index, event.images.length)} 
             <div className="event-content">
               <p>{event.description}</p>
               <p
