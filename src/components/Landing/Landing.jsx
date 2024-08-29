@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import logo_text from '../../assets/resurrection-text.png';
+import logo_text from '../../assets/resurrection-text.webp';
 
 function Landing() {
     return (
