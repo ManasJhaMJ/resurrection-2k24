@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";  // Import slick-carousel styles
+import "slick-carousel/slick/slick.css";  
 import "slick-carousel/slick/slick-theme.css";  // Import slick-carousel theme
 
 const Events = () => {
