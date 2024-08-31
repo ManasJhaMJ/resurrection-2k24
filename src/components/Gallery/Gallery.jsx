@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 
 import gallery01 from '../../assets/gallery/gallery01.webp'
-import gallery02 from '../../assets/gallery/gallery02.webp'
+// import gallery02 from '../../assets/gallery/gallery02.webp'
 import gallery03 from '../../assets/gallery/gallery03.webp'
 import gallery04 from '../../assets/gallery/gallery04.webp'
 import gallery05 from '../../assets/gallery/gallery05.webp'
@@ -29,7 +29,7 @@ function Gallery() {
                     navigation={true}
                     modules={[Pagination, Navigation]}>
                     <SwiperSlide><img src={gallery01} alt="gallery" /></SwiperSlide>
-                    <SwiperSlide><img src={gallery02} alt="gallery" /></SwiperSlide>
+                    {/* <SwiperSlide><img src={gallery02} alt="gallery" /></SwiperSlide> */}
                     <SwiperSlide><img src={gallery03} alt="gallery" /></SwiperSlide>
                     <SwiperSlide><img src={gallery04} alt="gallery" /></SwiperSlide>
                     <SwiperSlide><img src={gallery05} alt="gallery" /></SwiperSlide>
