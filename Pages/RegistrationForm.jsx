@@ -1,16 +1,16 @@
 import Navbar from '../src/components/Navbar/Navbar'; // Adjust the import path if needed
-import Events from '../src/components/Events/Events'; // Adjust the import path if needed
+import RegistrationForm from '../src/components/Events/RegistrationForm'; // Adjust the import path if needed
 import Footer from '../src/components/Footer/Footer'; // Adjust the import path if needed
 
 
-function MainPage() {
+function RegistrationPage() {
   return (
     <div>
       <Navbar />
-      <Events />
+      <RegistrationForm />
       <Footer />
     </div>
   );
 };
 
-export default MainPage;
+export default RegistrationPage;

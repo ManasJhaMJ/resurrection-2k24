@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 import "slick-carousel/slick/slick.css";  
 import "slick-carousel/slick/slick-theme.css";  // Import slick-carousel theme
 
@@ -121,7 +122,6 @@ const Events = () => {
         'https://via.placeholder.com/600x300.png?text=Event+1+Image+2',
         'https://via.placeholder.com/600x300.png?text=Event+1+Image+3',
       ],
-      registerLink: 'https://forms.gle/your-form-link',
     },
     {
       title: 'Event 2: Annual Tech Conference',
@@ -132,7 +132,6 @@ const Events = () => {
         'https://via.placeholder.com/600x300.png?text=Event+2+Image+2',
         'https://via.placeholder.com/600x300.png?text=Event+2+Image+3',
       ],
-      registerLink: 'https://forms.gle/your-form-link',
     },
     {
       title: 'Event 3: Annual Tech Conference',
@@ -143,7 +142,6 @@ const Events = () => {
         'https://via.placeholder.com/600x300.png?text=Event+3+Image+2',
         'https://via.placeholder.com/600x300.png?text=Event+3+Image+3',
       ],
-      registerLink: 'https://forms.gle/your-form-link',
     },
     {
       title: 'Event 4: Annual Tech Conference',
@@ -154,7 +152,6 @@ const Events = () => {
         'https://via.placeholder.com/600x300.png?text=Event+4+Image+2',
         'https://via.placeholder.com/600x300.png?text=Event+4+Image+3',
       ],
-      registerLink: 'https://forms.gle/your-form-link',
     },
     {
       title: 'Event 5: Annual Tech Conference',
@@ -165,7 +162,6 @@ const Events = () => {
         'https://via.placeholder.com/600x300.png?text=Event+5+Image+2',
         'https://via.placeholder.com/600x300.png?text=Event+5+Image+3',
       ],
-      registerLink: 'https://forms.gle/your-form-link',
     },
     {
       title: 'Event 6: Annual Tech Conference',
@@ -176,7 +172,6 @@ const Events = () => {
         'https://via.placeholder.com/600x300.png?text=Event+6+Image+2',
         'https://via.placeholder.com/600x300.png?text=Event+6+Image+3',
       ],
-      registerLink: 'https://forms.gle/your-form-link',
     },
   ];
 
@@ -248,9 +243,9 @@ const Events = () => {
               >
                 {expanded[index] ? 'Read Less' : 'Read More'}
               </p>
-              <a href={event.registerLink} target="_blank" rel="noopener noreferrer">
+              <Link to="/registration">
                 <button className="register">Register Now</button>
-              </a>
+              </Link>
             </div>
           </div>
         ))}
