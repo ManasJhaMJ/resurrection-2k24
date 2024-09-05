@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import "slick-carousel/slick/slick.css";  
 import "slick-carousel/slick/slick-theme.css";  // Import slick-carousel theme
 
+
 const Events = () => {
   const [expanded, setExpanded] = useState({});
   const [collapsing, setCollapsing] = useState({});
@@ -114,63 +115,104 @@ const Events = () => {
   };
   const events = [
     {
-      title: 'Event 1: Annual Tech Conference',
+      title: 'Music',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum magna vel cursus lacinia. Nam dictum sem sed pellentesque commodo. Fusce lacinia, metus ut rhoncus convallis, odio massa consectetur est, vel aliquam orci quam dictum est. Donec efficitur turpis imperdiet, porttitor nulla euismod, varius sem.Suspendisse sed arcu vitae mauris tincidunt elementum. Morbi molestie in justo sit amet porta. Nulla vulputate vitae dolor et lobortis. Nam eu lacinia mi, sit amet venenatis erat. Donec quis tortor at metus bibendum tempor a non neque. Nam id arcu a elit placerat imperdiet. Praesent egestas tempor mauris at elementum. Donec varius eros risus, eget commodo magna rutrum non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend vestibulum pulvinar. Pellentesque non blandit nisi, laoreet semper nulla. Nulla laoreet varius odio, sed pharetra ipsum. Sed vel enim velit. Vestibulum semper neque at velit bibendum, ac commodo lectus sagittis. Proin ligula neque, placerat mattis massa sed, fringilla hendrerit sapien. Praesent lobortis bibendum ipsum, quis feugiat sapien porta eu.In justo augue, porttitor quis mattis ut, malesuada et erat. Nullam dapibus nec urna eu consectetur. Duis venenatis nisl ut dapibus aliquam. Cras tempus porta ligula, at lobortis tortor blandit quis. Fusce quis libero eu lorem euismod posuere. Nunc aliquet nulla at risus vehicula sollicitudin. Aliquam turpis erat, ullamcorper dictum augue vel, interdum lacinia nunc. Suspendisse sit amet leo ex. Mauris et purus et sapien convallis scelerisque id sed odio. Nulla porttitor dapibus nunc. Nullam vulputate accumsan erat euismod congue. Aenean sed enim in massa sagittis luctus in vitae ante. Phasellus hendrerit erat velit, ut maximus magna porta at.Sed leo dui, porttitor sit amet mollis eget, suscipit sed lectus. Curabitur fringilla velit et lectus posuere commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis velit id justo laoreet vehicula. Integer a turpis ac eros tempor viverra vitae non libero. Sed a velit ac urna pulvinar efficitur. Maecenas semper lacinia eros, nec pulvinar lectus tristique eu. Fusce scelerisque nunc eget lacus viverra, eget pulvinar velit tristique. Aenean dapibus, augue ac pulvinar egestas, sem nunc fermentum velit, non vulputate justo tortor ut enim. Ut sit amet maximus libero, ut mollis lacus. Proin pellentesque massa risus, quis lacinia ante cursus ut. Proin porttitor finibus tempus. Praesent leo justo, mollis in condimentum id, fermentum nec velit. Sed ligula mi, rutrum sed convallis id, rutrum at elit. In venenatis facilisis nunc a consectetur. Donec quis nunc elit. Aliquam feugiat est in sodales laoreet. Donec fermentum ligula nec metus laoreet pulvinar. Integer et augue ac metus interdum ultrices at ut augue. Mauris id facilisis urna, a euismod mi. Morbi id metus leo. Nunc magna metus, tincidunt non turpis eu, rutrum placerat lacus. Aenean vestibulum eu sem at congue. Quisque suscipit enim nec libero dignissim, a varius metus suscipit. Nulla eu augue mi. Etiam eget blandit felis. Phasellus sit amet dolor at risus accumsan ornare. Vestibulum id nibh vel velit luctus cursus sed sit amet nunc. Mauris gravida mauris sed risus consequat, id consequat leo pellentesque. Praesent sed justo ex.",
+        `Music events are often the heartbeat of a college fest, drawing large crowds and enthusiastic participants. These events can range from solo performances to band battles and include different genres like classical, rock, pop, jazz, and more.
+
+Common Sub-events:
+
+Solo Singing Competitions: A platform for individual performers to showcase their vocal skills. Participants can perform in various genres—Western or Indian classical, contemporary, or regional folk.
+Battle of Bands: Rock bands or acoustic groups compete against each other in an electrifying battle to win the title of the best college band. The performances are usually high-energy, with the audience cheering along.
+Instrumental Performances: Musicians with expertise in instruments like the guitar, tabla, sitar, piano, or drums can perform solo or in ensembles.
+DJ Night or EDM Concert: An evening event where a DJ spins tracks, getting everyone on the dance floor, creating a nightclub-like experience.`,
       images: [
-        'https://via.placeholder.com/600x300.png?text=Event+1+Image+1',
-        'https://via.placeholder.com/600x300.png?text=Event+1+Image+2',
-        'https://via.placeholder.com/600x300.png?text=Event+1+Image+3',
+        'https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg',
+        'https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       ],
     },
     {
-      title: 'Event 2: Annual Tech Conference',
+      title: 'Dance',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum magna vel cursus lacinia. Nam dictum sem sed pellentesque commodo. Fusce lacinia, metus ut rhoncus convallis, odio massa consectetur est, vel aliquam orci quam dictum est. Donec efficitur turpis imperdiet, porttitor nulla euismod, varius sem.Suspendisse sed arcu vitae mauris tincidunt elementum. Morbi molestie in justo sit amet porta. Nulla vulputate vitae dolor et lobortis. Nam eu lacinia mi, sit amet venenatis erat. Donec quis tortor at metus bibendum tempor a non neque. Nam id arcu a elit placerat imperdiet. Praesent egestas tempor mauris at elementum. Donec varius eros risus, eget commodo magna rutrum non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend vestibulum pulvinar. Pellentesque non blandit nisi, laoreet semper nulla. Nulla laoreet varius odio, sed pharetra ipsum. Sed vel enim velit. Vestibulum semper neque at velit bibendum, ac commodo lectus sagittis. Proin ligula neque, placerat mattis massa sed, fringilla hendrerit sapien. Praesent lobortis bibendum ipsum, quis feugiat sapien porta eu.In justo augue, porttitor quis mattis ut, malesuada et erat. Nullam dapibus nec urna eu consectetur. Duis venenatis nisl ut dapibus aliquam. Cras tempus porta ligula, at lobortis tortor blandit quis. Fusce quis libero eu lorem euismod posuere. Nunc aliquet nulla at risus vehicula sollicitudin. Aliquam turpis erat, ullamcorper dictum augue vel, interdum lacinia nunc. Suspendisse sit amet leo ex. Mauris et purus et sapien convallis scelerisque id sed odio. Nulla porttitor dapibus nunc. Nullam vulputate accumsan erat euismod congue. Aenean sed enim in massa sagittis luctus in vitae ante. Phasellus hendrerit erat velit, ut maximus magna porta at.Sed leo dui, porttitor sit amet mollis eget, suscipit sed lectus. Curabitur fringilla velit et lectus posuere commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis velit id justo laoreet vehicula. Integer a turpis ac eros tempor viverra vitae non libero. Sed a velit ac urna pulvinar efficitur. Maecenas semper lacinia eros, nec pulvinar lectus tristique eu. Fusce scelerisque nunc eget lacus viverra, eget pulvinar velit tristique. Aenean dapibus, augue ac pulvinar egestas, sem nunc fermentum velit, non vulputate justo tortor ut enim. Ut sit amet maximus libero, ut mollis lacus. Proin pellentesque massa risus, quis lacinia ante cursus ut. Proin porttitor finibus tempus. Praesent leo justo, mollis in condimentum id, fermentum nec velit. Sed ligula mi, rutrum sed convallis id, rutrum at elit. In venenatis facilisis nunc a consectetur. Donec quis nunc elit. Aliquam feugiat est in sodales laoreet. Donec fermentum ligula nec metus laoreet pulvinar. Integer et augue ac metus interdum ultrices at ut augue. Mauris id facilisis urna, a euismod mi. Morbi id metus leo. Nunc magna metus, tincidunt non turpis eu, rutrum placerat lacus. Aenean vestibulum eu sem at congue. Quisque suscipit enim nec libero dignissim, a varius metus suscipit. Nulla eu augue mi. Etiam eget blandit felis. Phasellus sit amet dolor at risus accumsan ornare. Vestibulum id nibh vel velit luctus cursus sed sit amet nunc. Mauris gravida mauris sed risus consequat, id consequat leo pellentesque. Praesent sed justo ex.",
+        `Dance events are the most dynamic and vibrant part of any college fest, bringing together individuals and teams for high-energy performances across a variety of styles.
+
+Common Sub-events:
+
+Solo Dance Competitions: A stage for individual dancers to showcase their talent in styles like classical, hip-hop, contemporary, or even freestyle.
+Group Dance Competitions: Teams of dancers perform synchronized routines, often with a theme or story behind their performance. The competition is usually intense, with complex choreography and creative formations.
+Flash Mobs: A spontaneous, unannounced dance performance in a public area of the college, surprising onlookers and quickly gathering a crowd.
+Street Dance Battles: Often featuring breakdancers, this is a high-energy event where participants "battle" against one another, showing off their moves and agility.`,
       images: [
-        'https://via.placeholder.com/600x300.png?text=Event+2+Image+1',
-        'https://via.placeholder.com/600x300.png?text=Event+2+Image+2',
-        'https://via.placeholder.com/600x300.png?text=Event+2+Image+3',
+        'https://images.pexels.com/photos/27972781/pexels-photo-27972781/free-photo-of-a-man-is-on-his-feet-in-the-air-at-a-concert.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/27570912/pexels-photo-27570912/free-photo-of-a-man-in-a-hat-is-playing-music-at-a-party.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/28201137/pexels-photo-28201137/free-photo-of-people-holding-up-their-cell-phones-at-a-concert.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       ],
     },
     {
-      title: 'Event 3: Annual Tech Conference',
+      title: 'Fashion',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum magna vel cursus lacinia. Nam dictum sem sed pellentesque commodo. Fusce lacinia, metus ut rhoncus convallis, odio massa consectetur est, vel aliquam orci quam dictum est. Donec efficitur turpis imperdiet, porttitor nulla euismod, varius sem.Suspendisse sed arcu vitae mauris tincidunt elementum. Morbi molestie in justo sit amet porta. Nulla vulputate vitae dolor et lobortis. Nam eu lacinia mi, sit amet venenatis erat. Donec quis tortor at metus bibendum tempor a non neque. Nam id arcu a elit placerat imperdiet. Praesent egestas tempor mauris at elementum. Donec varius eros risus, eget commodo magna rutrum non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend vestibulum pulvinar. Pellentesque non blandit nisi, laoreet semper nulla. Nulla laoreet varius odio, sed pharetra ipsum. Sed vel enim velit. Vestibulum semper neque at velit bibendum, ac commodo lectus sagittis. Proin ligula neque, placerat mattis massa sed, fringilla hendrerit sapien. Praesent lobortis bibendum ipsum, quis feugiat sapien porta eu.In justo augue, porttitor quis mattis ut, malesuada et erat. Nullam dapibus nec urna eu consectetur. Duis venenatis nisl ut dapibus aliquam. Cras tempus porta ligula, at lobortis tortor blandit quis. Fusce quis libero eu lorem euismod posuere.",
+        `Fashion shows during college fests are glamorous events that let students flaunt their style and creativity on the ramp. These shows are not just about beauty; they also focus on themes, innovation, and presentation.
+
+Common Sub-events:
+
+Theme-based Fashion Show: Participants design costumes around a specific theme, such as sustainability, retro fashion, or futuristic styles. It's a blend of creativity and fashion.
+Ethnic Wear Show: This event focuses on traditional attire, where students can display their culture and heritage through fashion.
+Costume Design Competition: Aspiring designers present their original creations on the ramp, which are often judged on creativity, fit, and style.`,
       images: [
-        'https://via.placeholder.com/600x300.png?text=Event+3+Image+1',
-        'https://via.placeholder.com/600x300.png?text=Event+3+Image+2',
-        'https://via.placeholder.com/600x300.png?text=Event+3+Image+3',
+        'https://images.pexels.com/photos/157675/fashion-men-s-individuality-black-and-white-157675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/914668/pexels-photo-914668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/1375736/pexels-photo-1375736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       ],
     },
     {
-      title: 'Event 4: Annual Tech Conference',
+      title: 'Theatre',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum magna vel cursus lacinia. Nam dictum sem sed pellentesque commodo. Fusce lacinia, metus ut rhoncus convallis, odio massa consectetur est, vel aliquam orci quam dictum est. Donec efficitur turpis imperdiet, porttitor nulla euismod, varius sem.Suspendisse sed arcu vitae mauris tincidunt elementum. Morbi molestie in justo sit amet porta. Nulla vulputate vitae dolor et lobortis. Nam eu lacinia mi, sit amet venenatis erat. Donec quis tortor at metus bibendum tempor a non neque. Nam id arcu a elit placerat imperdiet. Praesent egestas tempor mauris at elementum. Donec varius eros risus, eget commodo magna rutrum non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend vestibulum pulvinar. Pellentesque non blandit nisi, laoreet semper nulla. Nulla laoreet varius odio, sed pharetra ipsum. Sed vel enim velit. Vestibulum semper neque at velit bibendum, ac commodo lectus sagittis. Proin ligula neque, placerat mattis massa sed, fringilla hendrerit sapien. Praesent lobortis bibendum ipsum, quis feugiat sapien porta eu.In justo augue, porttitor quis mattis ut, malesuada et erat. Nullam dapibus nec urna eu consectetur. Duis venenatis nisl ut dapibus aliquam. Cras tempus porta ligula, at lobortis tortor blandit quis. Fusce quis libero eu lorem euismod posuere. Nunc aliquet nulla at risus vehicula sollicitudin. Aliquam turpis erat, ullamcorper dictum augue vel, interdum lacinia nunc. Suspendisse sit amet leo ex. Mauris et purus et sapien convallis scelerisque id sed odio. Nulla porttitor dapibus nunc. Nullam vulputate accumsan erat euismod congue. Aenean sed enim in massa sagittis luctus in vitae ante. Phasellus hendrerit erat velit, ut maximus magna porta at.Sed leo dui, porttitor sit amet mollis eget, suscipit sed lectus. Curabitur fringilla velit et lectus posuere commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis velit id justo laoreet vehicula. Integer a turpis ac eros tempor viverra vitae non libero. Sed a velit ac urna pulvinar efficitur. Maecenas semper lacinia eros, nec pulvinar lectus tristique eu. Fusce scelerisque nunc eget lacus viverra, eget pulvinar velit tristique. Aenean dapibus, augue ac pulvinar egestas, sem nunc fermentum velit, non vulputate justo tortor ut enim. Ut sit amet maximus libero, ut mollis lacus. Proin pellentesque massa risus, quis lacinia ante cursus ut. Proin porttitor finibus tempus. Praesent leo justo, mollis in condimentum id, fermentum nec velit. Sed ligula mi, rutrum sed convallis id, rutrum at elit. In venenatis facilisis nunc a consectetur. Donec quis nunc elit. Aliquam feugiat est in sodales laoreet. Donec fermentum ligula nec metus laoreet pulvinar. Integer et augue ac metus interdum ultrices at ut augue. Mauris id facilisis urna, a euismod mi. Morbi id metus leo. Nunc magna metus, tincidunt non turpis eu, rutrum placerat lacus. Aenean vestibulum eu sem at congue. Quisque suscipit enim nec libero dignissim, a varius metus suscipit. Nulla eu augue mi. Etiam eget blandit felis. Phasellus sit amet dolor at risus accumsan ornare. Vestibulum id nibh vel velit luctus cursus sed sit amet nunc. Mauris gravida mauris sed risus consequat, id consequat leo pellentesque. Praesent sed justo ex.",
+        `Theatre events are a great platform for budding actors, directors, and playwrights to showcase their skills. These events bring out creativity and collaboration and are usually followed by intense applause and discussions.
+
+Common Sub-events:
+
+Street Plays (Nukkad Natak): Performed in open spaces like streets or courtyards, these short plays often address social issues like gender inequality, corruption, or environmental concerns.
+Stage Plays: Full-length productions are performed in an auditorium, covering genres such as drama, comedy, and tragedy. These are more formal, scripted performances with sets and costumes.
+Improv Theatre: A fun and challenging event where participants are required to perform impromptu, often based on audience suggestions.
+Mono-acts: Solo performances where one actor portrays multiple characters or a singular character in an intense, often emotionally charged script.`,
       images: [
-        'https://via.placeholder.com/600x300.png?text=Event+4+Image+1',
-        'https://via.placeholder.com/600x300.png?text=Event+4+Image+2',
-        'https://via.placeholder.com/600x300.png?text=Event+4+Image+3',
+        'https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/1581906/pexels-photo-1581906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/3836671/pexels-photo-3836671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       ],
     },
     {
-      title: 'Event 5: Annual Tech Conference',
+      title: 'Fine Arts',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum magna vel cursus lacinia. Nam dictum sem sed pellentesque commodo. Fusce lacinia, metus ut rhoncus convallis, odio massa consectetur est, vel aliquam orci quam dictum est. Donec efficitur turpis imperdiet, porttitor nulla euismod, varius sem.Suspendisse sed arcu vitae mauris tincidunt elementum. Morbi molestie in justo sit amet porta. Nulla vulputate vitae dolor et lobortis. Nam eu lacinia mi, sit amet venenatis erat. Donec quis tortor at metus bibendum tempor a non neque. Nam id arcu a elit placerat imperdiet. Praesent egestas tempor mauris at elementum. Donec varius eros risus, eget commodo magna rutrum non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend vestibulum pulvinar. Pellentesque non blandit nisi, laoreet semper nulla. Nulla laoreet varius odio, sed pharetra ipsum. Sed vel enim velit. Vestibulum semper neque at velit bibendum, ac commodo lectus sagittis. Proin ligula neque, placerat mattis massa sed, fringilla hendrerit sapien. Praesent lobortis bibendum ipsum, quis feugiat sapien porta eu.In justo augue, porttitor quis mattis ut, malesuada et erat. Nullam dapibus nec urna eu consectetur. Duis venenatis nisl ut dapibus aliquam. Cras tempus porta ligula, at lobortis tortor blandit quis. Fusce quis libero eu lorem euismod posuere. Nunc aliquet nulla at risus vehicula sollicitudin. Aliquam turpis erat, ullamcorper dictum augue vel, interdum lacinia nunc. Suspendisse sit amet leo ex. Mauris et purus et sapien convallis scelerisque id sed odio. Nulla porttitor dapibus nunc. Nullam vulputate accumsan erat euismod congue. Aenean sed enim in massa sagittis luctus in vitae ante. Phasellus hendrerit erat velit, ut maximus magna porta at.Sed leo dui, porttitor sit amet mollis eget, suscipit sed lectus. Curabitur fringilla velit et lectus posuere commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis velit id justo laoreet vehicula. Integer a turpis ac eros tempor viverra vitae non libero. Sed a velit ac urna pulvinar efficitur. Maecenas semper lacinia eros, nec pulvinar lectus tristique eu. Fusce scelerisque nunc eget lacus viverra, eget pulvinar velit tristique. Aenean dapibus, augue ac pulvinar egestas, sem nunc fermentum velit, non vulputate justo tortor ut enim. Ut sit amet maximus libero, ut mollis lacus. Proin pellentesque massa risus, quis lacinia ante cursus ut. Proin porttitor finibus tempus. Praesent leo justo, mollis in condimentum id, fermentum nec velit. Sed ligula mi, rutrum sed convallis id, rutrum at elit. In venenatis facilisis nunc a consectetur. Donec quis nunc elit. Aliquam feugiat est in sodales laoreet. Donec fermentum ligula nec metus laoreet pulvinar. Integer et augue ac metus interdum ultrices at ut augue. Mauris id facilisis urna, a euismod mi. Morbi id metus leo. Nunc magna metus, tincidunt non turpis eu, rutrum placerat lacus. Aenean vestibulum eu sem at congue. Quisque suscipit enim nec libero dignissim, a varius metus suscipit. Nulla eu augue mi. Etiam eget blandit felis. Phasellus sit amet dolor at risus accumsan ornare. Vestibulum id nibh vel velit luctus cursus sed sit amet nunc. Mauris gravida mauris sed risus consequat, id consequat leo pellentesque. Praesent sed justo ex.",
+        `Fine arts events attract those who are artistically inclined, offering a range of competitions that involve painting, drawing, and other forms of creative expression.
+
+Common Sub-events:
+
+Live Painting/Sketching Competitions: Artists are given a theme or concept and a limited time to create a piece of artwork live on stage or in an open space.
+Graffiti or Mural Competitions: Teams or individuals create large-scale artworks on walls or other surfaces around the college, often depicting themes of social relevance or abstract ideas.
+Sculpture or Clay Modeling: This event allows students to showcase their sculpting skills, creating detailed 3D models.
+Rangoli Competition: A traditional Indian art form where participants create intricate designs on the ground using colored powders or flowers.`,
       images: [
-        'https://via.placeholder.com/600x300.png?text=Event+5+Image+1',
-        'https://via.placeholder.com/600x300.png?text=Event+5+Image+2',
-        'https://via.placeholder.com/600x300.png?text=Event+5+Image+3',
+        'https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/11049654/pexels-photo-11049654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/9736889/pexels-photo-9736889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       ],
     },
     {
-      title: 'Event 6: Annual Tech Conference',
+      title: 'Literary',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum magna vel cursus lacinia. Nam dictum sem sed pellentesque commodo. Fusce lacinia, metus ut rhoncus convallis, odio massa consectetur est, vel aliquam orci quam dictum est. Donec efficitur turpis imperdiet, porttitor nulla euismod, varius sem.Suspendisse sed arcu vitae mauris tincidunt elementum. Morbi molestie in justo sit amet porta. Nulla vulputate vitae dolor et lobortis. Nam eu lacinia mi, sit amet venenatis erat. Donec quis tortor at metus bibendum tempor a non neque. Nam id arcu a elit placerat imperdiet. Praesent egestas tempor mauris at elementum. Donec varius eros risus, eget commodo magna rutrum non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend vestibulum pulvinar. Pellentesque non blandit nisi, laoreet semper nulla. Nulla laoreet varius odio, sed pharetra ipsum. Sed vel enim velit. Vestibulum semper neque at velit bibendum, ac commodo lectus sagittis. Proin ligula neque, placerat mattis massa sed, fringilla hendrerit sapien. Praesent lobortis bibendum ipsum, quis feugiat sapien porta eu.In justo augue, porttitor quis mattis ut, malesuada et erat. Nullam dapibus nec urna eu consectetur. Duis venenatis nisl ut dapibus aliquam. Cras tempus porta ligula, at lobortis tortor blandit quis. Fusce quis libero eu lorem euismod posuere. Nunc aliquet nulla at risus vehicula sollicitudin. Aliquam turpis erat, ullamcorper dictum augue vel, interdum lacinia nunc. Suspendisse sit amet leo ex. Mauris et purus et sapien convallis scelerisque id sed odio. Nulla porttitor dapibus nunc. Nullam vulputate accumsan erat euismod congue. Aenean sed enim in massa sagittis luctus in vitae ante. Phasellus hendrerit erat velit, ut maximus magna porta at.Sed leo dui, porttitor sit amet mollis eget, suscipit sed lectus. Curabitur fringilla velit et lectus posuere commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis velit id justo laoreet vehicula. Integer a turpis ac eros tempor viverra vitae non libero. Sed a velit ac urna pulvinar efficitur. Maecenas semper lacinia eros, nec pulvinar lectus tristique eu. Fusce scelerisque nunc eget lacus viverra, eget pulvinar velit tristique. Aenean dapibus, augue ac pulvinar egestas, sem nunc fermentum velit, non vulputate justo tortor ut enim. Ut sit amet maximus libero, ut mollis lacus. Proin pellentesque massa risus, quis lacinia ante cursus ut. Proin porttitor finibus tempus. Praesent leo justo, mollis in condimentum id, fermentum nec velit. Sed ligula mi, rutrum sed convallis id, rutrum at elit. In venenatis facilisis nunc a consectetur. Donec quis nunc elit. Aliquam feugiat est in sodales laoreet. Donec fermentum ligula nec metus laoreet pulvinar. Integer et augue ac metus interdum ultrices at ut augue. Mauris id facilisis urna, a euismod mi. Morbi id metus leo. Nunc magna metus, tincidunt non turpis eu, rutrum placerat lacus. Aenean vestibulum eu sem at congue. Quisque suscipit enim nec libero dignissim, a varius metus suscipit. Nulla eu augue mi. Etiam eget blandit felis. Phasellus sit amet dolor at risus accumsan ornare. Vestibulum id nibh vel velit luctus cursus sed sit amet nunc. Mauris gravida mauris sed risus consequat, id consequat leo pellentesque. Praesent sed justo ex.",
+        `Literary events are for those who have a passion for language, creativity, and critical thinking. These events often involve competitions centered on writing, debating, and oration.
+
+Common Sub-events:
+
+Debates: Teams or individuals present arguments on a given topic, often divided into ‘for’ and ‘against’. The debates are typically judged on logic, presentation, and rebuttals.
+Creative Writing Competitions: Participants are given prompts or themes and a set time to write stories, essays, or poetry.
+Quiz Competitions: A battle of knowledge where teams answer questions related to general knowledge, current events, or a specialized subject.
+Elocution/Spoken Word: Participants perform prepared or impromptu speeches or spoken-word poetry on various topics, judged on clarity, delivery, and content.`,
       images: [
-        'https://via.placeholder.com/600x300.png?text=Event+6+Image+1',
-        'https://via.placeholder.com/600x300.png?text=Event+6+Image+2',
-        'https://via.placeholder.com/600x300.png?text=Event+6+Image+3',
+        'https://images.pexels.com/photos/15653088/pexels-photo-15653088/free-photo-of-a-book-stand-with-books-on-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/27134578/pexels-photo-27134578/free-photo-of-view-of-a-bookcase-in-a-library.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        'https://images.pexels.com/photos/20527023/pexels-photo-20527023/free-photo-of-portrait-of-a-young-woman-with-mexico-city-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       ],
     },
   ];
